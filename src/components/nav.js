@@ -4,17 +4,20 @@ import React from "react"
 import logo from "../images/anbylogo.png"
 
 const Header = ({ siteTitle }) => (
-  <ul class="tab col-2 text-large">
-  <li class="tab-item">
-    <Link to="/">Home</Link>
-  </li>
-  <li class="tab-item">
-    <Link to="/projects/">Projects</Link>
-  </li>
-  <li class="tab-item">
-    <Link to="/blog/">Blog</Link>
-  </li>
-  </ul>
+    <ul class="nav text-large text-center ">
+    <li class="nav-item">
+      <Link to="/">Home</Link>
+    </li>
+    <li class="nav-item">
+      <Link to="/projects/">Projects</Link>
+    </li>
+    <li class="nav-item">
+      <Link to="/blog/">Blog</Link>
+    </li>
+    <li class="nav-item">
+      <Link to="/contact/">Contact</Link>
+    </li>
+    </ul>
 )
 
 Header.propTypes = {
