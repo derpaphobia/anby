@@ -25,12 +25,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div class="allthe">
     <div class="columns col-gapless">
-    <div class="column col-2 float-left p-fixed">
+    <div class="column col-2">
       <Header siteTitle={data.site.siteMetadata.title} />
-        <div class="divider-vert col-1 float-left p-relative"></div>
-        <div class="column col-auto float-right">
+      </div>
+        <div class="divider-vert"></div>
+        <div class="column">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
@@ -39,8 +39,6 @@ const Layout = ({ children }) => {
         </footer>
       </div>
       </div>
-      </div>
-    </div>
   )
 }
 
